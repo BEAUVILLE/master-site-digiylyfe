@@ -13,9 +13,27 @@
   "identity": {
     "name": "Babacar Diop",
     "brand": "Babacar Plomberie",
-    "activity": "Plombier",
+    "activity": {
+      "fr": "Plombier",
+      "en": "Plumber",
+      "es": "Fontanero",
+      "pt": "Canalizador",
+      "it": "Idraulico",
+      "de": "Installateur",
+      "nl": "Loodgieter",
+      "ar": "سبّاك"
+    },
     "zone": "Saly · Petite Côte",
-    "tagline": "Fuites, installations, dépannage — j'interviens vite et je laisse propre.",
+    "tagline": {
+      "fr": "Fuites, installations, dépannage — j'interviens vite et je laisse propre.",
+      "en": "Leaks, installations, repairs — I respond quickly and leave the job clean.",
+      "es": "Fugas, instalaciones, reparaciones — intervengo rápido y dejo todo limpio.",
+      "pt": "Fugas, instalações, reparações — intervenho rapidamente e deixo tudo limpo.",
+      "it": "Perdite, installazioni, riparazioni — intervengo rapidamente e lascio tutto pulito.",
+      "de": "Leckagen, Installationen, Reparaturen — ich komme schnell und hinterlasse alles sauber.",
+      "nl": "Lekken, installaties, herstellingen — ik kom snel en laat alles netjes achter.",
+      "ar": "تسرّبات، تركيبات، إصلاحات — أتدخل بسرعة وأترك المكان نظيفًا."
+    },
     "hero_image": "photos/hero.webp",
     "hero_image_fallback": "photos/hero.jpg",
     "hero_video": null
@@ -25,32 +43,99 @@
     "whatsapp": "+221 77 000 00 00",
     "phone": "+221 77 000 00 00",
     "maps": "https://maps.google.com/?q=Saly+Portudal",
-    "hours": "Lun–Sam · 8h – 20h"
+    "hours": {
+      "fr": "Lun–Sam · 8h – 20h",
+      "en": "Mon–Sat · 8am–8pm",
+      "es": "Lun–Sáb · 8:00–20:00",
+      "pt": "Seg–Sáb · 8h–20h",
+      "it": "Lun–Sab · 8:00–20:00",
+      "de": "Mo–Sa · 8–20 Uhr",
+      "nl": "Ma–Za · 8.00–20.00",
+      "ar": "الإثنين–السبت · 8:00–20:00"
+    }
   },
 
   "about": {
-    "text": "Je suis Babacar, plombier sur la Petite Côte depuis plus de dix ans.\nJe travaille en direct avec mes clients : vous m'appelez, on se met d'accord, je viens. Pas d'intermédiaire, pas de commission cachée.\nDépannage d'urgence, installations neuves, entretien — je fais le travail proprement et je vous explique ce que je fais."
+    "text": {
+      "fr": "Je suis Babacar, plombier sur la Petite Côte depuis plus de dix ans.\nJe travaille en direct avec mes clients : vous m'appelez, on se met d'accord, je viens. Pas d'intermédiaire, pas de commission cachée.\nDépannage d'urgence, installations neuves, entretien — je fais le travail proprement et je vous explique ce que je fais.",
+      "en": "I am Babacar, a plumber on the Petite Côte for more than ten years.\nI work directly with my clients: you call me, we agree on the job, I come. No intermediary, no hidden commission.\nEmergency repairs, new installations, maintenance — I work cleanly and explain what I am doing.",
+      "es": "Soy Babacar, fontanero en la Petite Côte desde hace más de diez años.\nTrabajo directamente con mis clientes: me llama, acordamos el trabajo y voy. Sin intermediarios ni comisiones ocultas.\nUrgencias, instalaciones nuevas, mantenimiento — trabajo de forma limpia y le explico lo que hago.",
+      "pt": "Sou o Babacar, canalizador na Petite Côte há mais de dez anos.\nTrabalho diretamente com os meus clientes: liga-me, combinamos o trabalho e eu vou. Sem intermediários nem comissões escondidas.\nUrgências, novas instalações, manutenção — trabalho de forma limpa e explico o que estou a fazer.",
+      "it": "Sono Babacar, idraulico sulla Petite Côte da più di dieci anni.\nLavoro direttamente con i miei clienti: mi chiamate, ci accordiamo sul lavoro e arrivo. Nessun intermediario, nessuna commissione nascosta.\nPronto intervento, nuove installazioni, manutenzione — lavoro in modo pulito e vi spiego quello che faccio.",
+      "de": "Ich bin Babacar und seit mehr als zehn Jahren Installateur an der Petite Côte.\nIch arbeite direkt mit meinen Kunden: Sie rufen mich an, wir vereinbaren die Arbeit und ich komme. Kein Vermittler, keine versteckte Provision.\nNotfallreparaturen, Neuinstallationen, Wartung — ich arbeite sauber und erkläre Ihnen, was ich mache.",
+      "nl": "Ik ben Babacar, al meer dan tien jaar loodgieter aan de Petite Côte.\nIk werk rechtstreeks met mijn klanten: u belt mij, we spreken het werk af en ik kom langs. Geen tussenpersoon, geen verborgen commissie.\nSpoedherstellingen, nieuwe installaties, onderhoud — ik werk netjes en leg uit wat ik doe.",
+      "ar": "أنا باباكار، سبّاك في منطقة Petite Côte منذ أكثر من عشر سنوات.\nأتعامل مباشرة مع زبائني: تتصل بي، نتفق على العمل ثم آتي إليك. لا وسيط ولا عمولة مخفية.\nإصلاحات طارئة، تركيبات جديدة وصيانة — أعمل بنظافة وأشرح لك ما أقوم به."
+    }
   },
 
   "services": [
-    { "title": "Dépannage fuite", "desc": "Détection et réparation rapide, jour comme nuit.", "price": "à partir de 5 000 FCFA" },
-    { "title": "Installation sanitaire", "desc": "Lavabo, WC, douche, chauffe-eau — pose complète.", "price": "sur devis" },
-    { "title": "Débouchage", "desc": "Éviers, canalisations, WC bouchés.", "price": "à partir de 8 000 FCFA" },
-    { "title": "Entretien & contrôle", "desc": "Vérification annuelle de votre installation.", "price": "" },
-    { "title": "Raccordement eau", "desc": "Mise en eau et raccordement propre.", "price": "sur devis" },
-    { "title": "Urgence week-end", "desc": "Intervention samedi et dimanche.", "price": "" }
+    {
+      "title": {"fr":"Dépannage fuite","en":"Leak repair","es":"Reparación de fugas","pt":"Reparação de fugas","it":"Riparazione perdite","de":"Leckage-Reparatur","nl":"Lekreparatie","ar":"إصلاح التسرّبات"},
+      "desc": {"fr":"Détection et réparation rapide, jour comme nuit.","en":"Fast detection and repair, day or night.","es":"Detección y reparación rápida, de día o de noche.","pt":"Deteção e reparação rápidas, de dia ou de noite.","it":"Ricerca e riparazione rapida, giorno e notte.","de":"Schnelle Ortung und Reparatur, Tag und Nacht.","nl":"Snelle opsporing en reparatie, dag en nacht.","ar":"كشف وإصلاح سريع، ليلًا ونهارًا."},
+      "price": {"fr":"à partir de 5 000 FCFA","en":"from 5,000 FCFA","es":"desde 5 000 FCFA","pt":"a partir de 5 000 FCFA","it":"a partire da 5.000 FCFA","de":"ab 5.000 FCFA","nl":"vanaf 5.000 FCFA","ar":"ابتداءً من 5,000 فرنك CFA"}
+    },
+    {
+      "title": {"fr":"Installation sanitaire","en":"Sanitary installation","es":"Instalación sanitaria","pt":"Instalação sanitária","it":"Installazione sanitaria","de":"Sanitärinstallation","nl":"Sanitaire installatie","ar":"تركيبات صحية"},
+      "desc": {"fr":"Lavabo, WC, douche, chauffe-eau — pose complète.","en":"Sink, toilet, shower, water heater — complete installation.","es":"Lavabo, WC, ducha, calentador — instalación completa.","pt":"Lavatório, WC, duche, esquentador — instalação completa.","it":"Lavabo, WC, doccia, scaldabagno — installazione completa.","de":"Waschbecken, WC, Dusche, Warmwasserbereiter — komplette Installation.","nl":"Wastafel, toilet, douche, boiler — complete installatie.","ar":"مغسلة، مرحاض، دش، سخان مياه — تركيب كامل."},
+      "price": {"fr":"sur devis","en":"on quotation","es":"presupuesto","pt":"sob orçamento","it":"su preventivo","de":"nach Kostenvoranschlag","nl":"op offerte","ar":"حسب عرض السعر"}
+    },
+    {
+      "title": {"fr":"Débouchage","en":"Drain unblocking","es":"Desatasco","pt":"Desentupimento","it":"Disotturazione","de":"Rohrreinigung","nl":"Ontstopping","ar":"تسليك المجاري"},
+      "desc": {"fr":"Éviers, canalisations, WC bouchés.","en":"Blocked sinks, pipes and toilets.","es":"Fregaderos, tuberías y WC atascados.","pt":"Lava-loiças, canalizações e WC entupidos.","it":"Lavelli, tubazioni e WC intasati.","de":"Verstopfte Spülen, Leitungen und Toiletten.","nl":"Verstopte gootstenen, leidingen en toiletten.","ar":"أحواض وأنابيب ومراحيض مسدودة."},
+      "price": {"fr":"à partir de 8 000 FCFA","en":"from 8,000 FCFA","es":"desde 8 000 FCFA","pt":"a partir de 8 000 FCFA","it":"a partire da 8.000 FCFA","de":"ab 8.000 FCFA","nl":"vanaf 8.000 FCFA","ar":"ابتداءً من 8,000 فرنك CFA"}
+    },
+    {
+      "title": {"fr":"Entretien & contrôle","en":"Maintenance & inspection","es":"Mantenimiento y revisión","pt":"Manutenção e controlo","it":"Manutenzione e controllo","de":"Wartung & Kontrolle","nl":"Onderhoud & controle","ar":"صيانة وفحص"},
+      "desc": {"fr":"Vérification annuelle de votre installation.","en":"Annual inspection of your installation.","es":"Revisión anual de su instalación.","pt":"Verificação anual da sua instalação.","it":"Controllo annuale del vostro impianto.","de":"Jährliche Kontrolle Ihrer Installation.","nl":"Jaarlijkse controle van uw installatie.","ar":"فحص سنوي للتركيبات."},
+      "price": ""
+    },
+    {
+      "title": {"fr":"Raccordement eau","en":"Water connection","es":"Conexión de agua","pt":"Ligação de água","it":"Allacciamento acqua","de":"Wasseranschluss","nl":"Wateraansluiting","ar":"توصيل المياه"},
+      "desc": {"fr":"Mise en eau et raccordement propre.","en":"Water supply setup and clean connection.","es":"Puesta en servicio y conexión limpia.","pt":"Colocação em serviço e ligação limpa.","it":"Messa in servizio e collegamento eseguito con cura.","de":"Saubere Inbetriebnahme und Wasseranbindung.","nl":"Inbedrijfstelling en nette wateraansluiting.","ar":"تشغيل وتوصيل المياه بشكل نظيف."},
+      "price": {"fr":"sur devis","en":"on quotation","es":"presupuesto","pt":"sob orçamento","it":"su preventivo","de":"nach Kostenvoranschlag","nl":"op offerte","ar":"حسب عرض السعر"}
+    },
+    {
+      "title": {"fr":"Urgence week-end","en":"Weekend emergency","es":"Urgencia de fin de semana","pt":"Urgência ao fim de semana","it":"Urgenza nel weekend","de":"Wochenend-Notdienst","nl":"Weekendspoed","ar":"طوارئ نهاية الأسبوع"},
+      "desc": {"fr":"Intervention samedi et dimanche.","en":"Service on Saturday and Sunday.","es":"Intervención sábado y domingo.","pt":"Intervenção ao sábado e domingo.","it":"Intervento il sabato e la domenica.","de":"Einsatz am Samstag und Sonntag.","nl":"Service op zaterdag en zondag.","ar":"تدخل يومي السبت والأحد."},
+      "price": ""
+    }
   ],
 
   "gallery": [
-    { "src": "photos/g1.webp", "fallback": "photos/g1.jpg", "alt": "Installation chauffe-eau" },
-    { "src": "photos/g2.webp", "fallback": "photos/g2.jpg", "alt": "Réparation fuite sous évier" },
-    { "src": "photos/g3.webp", "fallback": "photos/g3.jpg", "alt": "Pose de robinetterie" }
+    {
+      "src": "photos/g1.webp",
+      "fallback": "photos/g1.jpg",
+      "alt": {"fr":"Installation chauffe-eau","en":"Water heater installation","es":"Instalación de calentador de agua","pt":"Instalação de esquentador","it":"Installazione scaldabagno","de":"Installation eines Warmwasserbereiters","nl":"Installatie van een boiler","ar":"تركيب سخان مياه"}
+    },
+    {
+      "src": "photos/g2.webp",
+      "fallback": "photos/g2.jpg",
+      "alt": {"fr":"Réparation fuite sous évier","en":"Repairing a leak under a sink","es":"Reparación de fuga bajo fregadero","pt":"Reparação de fuga sob lava-loiça","it":"Riparazione perdita sotto il lavello","de":"Reparatur eines Lecks unter der Spüle","nl":"Reparatie van een lek onder de gootsteen","ar":"إصلاح تسرّب تحت الحوض"}
+    },
+    {
+      "src": "photos/g3.webp",
+      "fallback": "photos/g3.jpg",
+      "alt": {"fr":"Pose de robinetterie","en":"Faucet installation","es":"Instalación de grifería","pt":"Instalação de torneiras","it":"Installazione rubinetteria","de":"Montage von Armaturen","nl":"Montage van kranen","ar":"تركيب الصنابير"}
+    }
   ],
 
   "proofs": [
-    { "type": "temoignage", "text": "Venu en moins d'une heure un dimanche, travail impeccable.", "author": "Awa, Saly" },
-    { "type": "temoignage", "text": "Prix clair annoncé avant, aucune surprise. Je recommande.", "author": "Mr Ndiaye, Somone" },
-    { "type": "realisation", "text": "Rénovation complète salle de bain, résidence Saly.", "author": "", "image": "photos/g1.jpg" }
+    {
+      "type": "temoignage",
+      "text": {"fr":"Venu en moins d'une heure un dimanche, travail impeccable.","en":"He arrived in less than an hour on a Sunday. Impeccable work.","es":"Llegó en menos de una hora un domingo. Trabajo impecable.","pt":"Chegou em menos de uma hora num domingo. Trabalho impecável.","it":"È arrivato in meno di un'ora di domenica. Lavoro impeccabile.","de":"An einem Sonntag in weniger als einer Stunde vor Ort. Tadellose Arbeit.","nl":"Op zondag binnen een uur ter plaatse. Uitstekend werk.","ar":"وصل في أقل من ساعة يوم الأحد. عمل متقن."},
+      "author": "Awa, Saly"
+    },
+    {
+      "type": "temoignage",
+      "text": {"fr":"Prix clair annoncé avant, aucune surprise. Je recommande.","en":"Clear price announced beforehand, no surprises. I recommend him.","es":"Precio claro anunciado de antemano, sin sorpresas. Lo recomiendo.","pt":"Preço claro anunciado antes, sem surpresas. Recomendo.","it":"Prezzo chiaro comunicato prima, nessuna sorpresa. Lo consiglio.","de":"Klarer Preis vorher genannt, keine Überraschungen. Ich empfehle ihn.","nl":"Duidelijke prijs vooraf, geen verrassingen. Ik beveel hem aan.","ar":"السعر واضح ومعلن مسبقًا، بلا مفاجآت. أوصي به."},
+      "author": "Mr Ndiaye, Somone"
+    },
+    {
+      "type": "realisation",
+      "text": {"fr":"Rénovation complète salle de bain, résidence Saly.","en":"Complete bathroom renovation, Saly residence.","es":"Renovación completa de baño, residencia en Saly.","pt":"Renovação completa de casa de banho, residência em Saly.","it":"Ristrutturazione completa del bagno, residenza a Saly.","de":"Komplette Badsanierung, Wohnanlage in Saly.","nl":"Volledige badkamerrenovatie, residentie in Saly.","ar":"تجديد كامل للحمام في إقامة بسالي."},
+      "author": "",
+      "image": "photos/g1.jpg"
+    }
   ],
 
   "card": {

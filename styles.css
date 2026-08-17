@@ -1,0 +1,222 @@
+/* =====================================================================
+   MASTER SITE DIGIYLYFE · V1 — feuille de style FIXE (ne change pas par pro)
+   Mobile-first. Léger, sans police externe, réseau faible OK.
+   ===================================================================== */
+
+:root{
+  /* ADN DIGIYLYFE */
+  --dg-dark:#0D0F0E;
+  --dg-gold:#C49A22;
+  --dg-green:#1A5C38;
+
+  /* Surface & encre */
+  --bg:#FCFBF9;
+  --surface:#ffffff;
+  --ink:#16130E;
+  --muted:#6d6559;
+  --line:#ece6db;
+
+  /* Accent sectoriel — écrasé par app.js selon le métier. Défaut = or. */
+  --accent:var(--dg-gold);
+
+  /* Action directe (vert WhatsApp maison) */
+  --wa:#1A5C38;
+  --wa-ink:#ffffff;
+
+  --radius:16px;
+  --radius-sm:12px;
+  --shadow:0 1px 2px rgba(20,17,10,.06), 0 8px 24px rgba(20,17,10,.06);
+  --dock-h:64px;
+
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+*{box-sizing:border-box}
+/* Garde-fou : l'attribut hidden l'emporte toujours sur un display de classe */
+[hidden]{display:none !important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(var(--dock-h) + env(safe-area-inset-bottom,0));
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,p{margin:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* ---------- Barre haute ---------- */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 16px;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;letter-spacing:.14em}
+.brand__mark{color:var(--dg-gold);font-size:1.05rem}
+.brand__name{font-size:.72rem;color:var(--ink)}
+.lang{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.lang button{
+  appearance:none;border:0;background:transparent;
+  font:inherit;font-size:.68rem;font-weight:700;letter-spacing:.06em;
+  color:var(--muted);padding:5px 7px;border-radius:8px;cursor:pointer;text-transform:uppercase;
+}
+.lang button[aria-current="true"]{color:var(--ink);background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)}
+
+/* ---------- 1 · HERO / IDENTITÉ ---------- */
+.hero{position:relative;min-height:min(84vh,640px);display:flex;align-items:flex-end;overflow:hidden;background:var(--dg-dark)}
+.hero__media,.hero__media img,.hero__media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero__scrim{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(13,15,14,0) 30%,rgba(13,15,14,.55) 68%,rgba(13,15,14,.9) 100%)}
+.hero__inner{position:relative;z-index:2;padding:28px 20px 30px;color:#fff;width:100%}
+.eyebrow{
+  display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:#fff;padding:5px 10px;border-radius:999px;
+  background:color-mix(in srgb,var(--accent) 88%,black 0%);
+  box-shadow:0 2px 10px rgba(0,0,0,.25);margin-bottom:14px
+}
+.hero__name{font-size:clamp(2rem,8.5vw,3rem);line-height:1.02;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.hero__tagline{margin-top:12px;font-size:1.02rem;max-width:36ch;color:rgba(255,255,255,.92)}
+
+/* ---------- 2 · CONTACT IMMÉDIAT ---------- */
+.quickcontact{
+  display:grid;grid-template-columns:1fr;gap:10px;
+  padding:16px;margin-top:-1px;background:var(--surface);
+  border-bottom:1px solid var(--line)
+}
+@media(min-width:420px){.quickcontact{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+.cbtn{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 16px;border-radius:var(--radius-sm);text-decoration:none;
+  font-weight:800;font-size:1rem;letter-spacing:.01em;min-height:54px;
+  transition:transform .06s ease, filter .15s ease
+}
+.cbtn:active{transform:translateY(1px)}
+.cbtn__ico{font-size:1.15rem;line-height:1}
+.cbtn--wa{background:var(--wa);color:var(--wa-ink)}
+.cbtn--call{background:var(--dg-dark);color:#fff}
+.cbtn--map{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.cbtn--vcf{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.cbtn--share{background:transparent;color:var(--muted);box-shadow:inset 0 0 0 1.5px var(--line)}
+
+/* ---------- Blocs génériques ---------- */
+.block{padding:34px 20px;max-width:720px;margin:0 auto}
+.block__title{
+  font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:16px;position:relative;padding-left:26px
+}
+.block__title::before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:16px;height:3px;border-radius:3px;background:var(--accent)
+}
+
+/* 3 · Présentation */
+.about__text{font-size:1.06rem;color:var(--ink)}
+.about__text p{margin-bottom:.8em}
+.about__text p:last-child{margin-bottom:0}
+
+/* 4 · Services */
+.services__grid{display:grid;gap:12px}
+@media(min-width:520px){.services__grid{grid-template-columns:1fr 1fr}}
+.svc{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 15px;box-shadow:var(--shadow)
+}
+.svc__title{font-weight:800;font-size:1.02rem;margin-bottom:4px}
+.svc__desc{color:var(--muted);font-size:.94rem}
+.svc__price{
+  display:inline-block;margin-top:10px;font-weight:800;font-size:.86rem;
+  color:var(--dg-green);background:color-mix(in srgb,var(--dg-green) 10%,white);
+  padding:4px 10px;border-radius:999px
+}
+
+/* 5 · Galerie */
+.gallery__grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(min-width:560px){.gallery__grid{grid-template-columns:repeat(3,1fr)}}
+.gallery__item{
+  position:relative;aspect-ratio:1/1;border-radius:var(--radius-sm);overflow:hidden;
+  border:0;padding:0;cursor:zoom-in;background:var(--line)
+}
+.gallery__item img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.gallery__item:active img{transform:scale(1.03)}
+
+/* 6 · Preuves */
+.proofs__grid{display:grid;gap:12px}
+.proof{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start
+}
+.proof__img{width:64px;height:64px;border-radius:12px;object-fit:cover;flex:0 0 auto}
+.proof__text{font-size:.98rem}
+.proof__author{display:block;margin-top:6px;font-weight:800;font-size:.86rem;color:var(--muted)}
+.proof--quote .proof__text{font-style:italic}
+.proof--quote .proof__text::before{content:"“";color:var(--accent);font-weight:800;font-size:1.4em;line-height:0;vertical-align:-.3em;margin-right:2px}
+
+/* 7 · Carte DIGIYLYFE */
+.card__inner{display:grid;gap:16px;align-items:center}
+@media(min-width:520px){.card__inner{grid-template-columns:1.3fr .9fr}}
+.card__visual{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:var(--surface)}
+.card__qr{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.card__qr img{width:170px;height:170px;border-radius:12px;background:#fff;padding:8px;box-shadow:var(--shadow)}
+.card__hint{font-size:.86rem;color:var(--muted);max-width:24ch}
+
+/* 8 · Contact final */
+.finalcontact{background:var(--dg-dark);color:#fff;max-width:none;margin:0}
+.finalcontact .block__title{color:rgba(255,255,255,.66)}
+.finalcontact__inner{max-width:720px;margin:0 auto;display:grid;gap:12px}
+.finalrow{display:flex;align-items:center;gap:12px;font-size:1rem}
+.finalrow__ico{width:34px;height:34px;flex:0 0 auto;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.08);color:var(--dg-gold)}
+.finalrow a{color:#fff;text-decoration:none;font-weight:700}
+.finalcontact .cbtn{margin-top:6px}
+.finalcontact .cbtn--map{background:rgba(255,255,255,.06);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.2)}
+
+/* 9 · Signature */
+.signature{text-align:center;padding:30px 20px calc(34px + var(--dock-h));background:var(--dg-dark);color:rgba(255,255,255,.8)}
+.signature__mark{font-size:1.4rem}
+.signature__line{margin-top:8px;font-weight:800;color:#fff;letter-spacing:.02em}
+.signature__doctrine{margin-top:6px;font-size:.82rem;color:var(--dg-gold);letter-spacing:.04em}
+
+/* ---------- Dock permanent (signature UX) ---------- */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;height:var(--dock-h);
+  display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:0;
+  background:color-mix(in srgb,var(--dg-dark) 96%,transparent);
+  border-top:2px solid var(--accent);
+  padding-bottom:env(safe-area-inset-bottom,0)
+}
+.dock a{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  text-decoration:none;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em
+}
+.dock a .dock__ico{font-size:1.25rem;line-height:1}
+.dock a--wa{color:#fff}
+.dock a:active{background:rgba(255,255,255,.06)}
+
+/* ---------- Lightbox ---------- */
+.lightbox{position:fixed;inset:0;z-index:80;background:rgba(6,7,6,.94);display:grid;place-items:center;padding:20px}
+.lightbox__img{max-width:100%;max-height:86vh;border-radius:10px}
+.lightbox__close{position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:1.1rem;cursor:pointer}
+
+/* ---------- État vide ---------- */
+.fallback{padding:64px 24px;text-align:center;color:var(--muted);max-width:420px;margin:0 auto}
+.fallback h2{color:var(--ink);margin-bottom:8px}
+
+/* ---------- Reveal léger ---------- */
+[data-reveal]{opacity:0;transform:translateY(8px)}
+[data-reveal].is-in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+
+/* ---------- RTL (arabe) ---------- */
+[dir="rtl"] .block__title{padding-left:0;padding-right:26px}
+[dir="rtl"] .block__title::before{left:auto;right:0}
+[dir="rtl"] .eyebrow{letter-spacing:0}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  [data-reveal]{opacity:1;transform:none}
+}

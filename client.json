@@ -1,0 +1,61 @@
+{
+  "_lisezmoi": "SEUL fichier à modifier par professionnel. Les champs texte acceptent soit une chaîne (FR), soit un objet multilingue { \"fr\": \"…\", \"en\": \"…\" }. À aligner sur les noms de champs du MODELE-DONNEES-MASTER-DIGIYLYFE-V1-UNIFIE quand tu veux brancher carte+fiche+site sur la même source.",
+
+  "meta": {
+    "slug": "babacar-plomberie",
+    "sector": "plombier",
+    "accent": null,
+    "lang_default": "fr",
+    "langs": ["fr", "en", "es", "pt", "it", "de", "nl", "ar"],
+    "url": "https://babacar-plomberie.digiylyfe.com"
+  },
+
+  "identity": {
+    "name": "Babacar Diop",
+    "brand": "Babacar Plomberie",
+    "activity": "Plombier",
+    "zone": "Saly · Petite Côte",
+    "tagline": "Fuites, installations, dépannage — j'interviens vite et je laisse propre.",
+    "hero_image": "photos/hero.webp",
+    "hero_image_fallback": "photos/hero.jpg",
+    "hero_video": null
+  },
+
+  "contact": {
+    "whatsapp": "+221 77 000 00 00",
+    "phone": "+221 77 000 00 00",
+    "maps": "https://maps.google.com/?q=Saly+Portudal",
+    "hours": "Lun–Sam · 8h – 20h"
+  },
+
+  "about": {
+    "text": "Je suis Babacar, plombier sur la Petite Côte depuis plus de dix ans.\nJe travaille en direct avec mes clients : vous m'appelez, on se met d'accord, je viens. Pas d'intermédiaire, pas de commission cachée.\nDépannage d'urgence, installations neuves, entretien — je fais le travail proprement et je vous explique ce que je fais."
+  },
+
+  "services": [
+    { "title": "Dépannage fuite", "desc": "Détection et réparation rapide, jour comme nuit.", "price": "à partir de 5 000 FCFA" },
+    { "title": "Installation sanitaire", "desc": "Lavabo, WC, douche, chauffe-eau — pose complète.", "price": "sur devis" },
+    { "title": "Débouchage", "desc": "Éviers, canalisations, WC bouchés.", "price": "à partir de 8 000 FCFA" },
+    { "title": "Entretien & contrôle", "desc": "Vérification annuelle de votre installation.", "price": "" },
+    { "title": "Raccordement eau", "desc": "Mise en eau et raccordement propre.", "price": "sur devis" },
+    { "title": "Urgence week-end", "desc": "Intervention samedi et dimanche.", "price": "" }
+  ],
+
+  "gallery": [
+    { "src": "photos/g1.webp", "fallback": "photos/g1.jpg", "alt": "Installation chauffe-eau" },
+    { "src": "photos/g2.webp", "fallback": "photos/g2.jpg", "alt": "Réparation fuite sous évier" },
+    { "src": "photos/g3.webp", "fallback": "photos/g3.jpg", "alt": "Pose de robinetterie" }
+  ],
+
+  "proofs": [
+    { "type": "temoignage", "text": "Venu en moins d'une heure un dimanche, travail impeccable.", "author": "Awa, Saly" },
+    { "type": "temoignage", "text": "Prix clair annoncé avant, aucune surprise. Je recommande.", "author": "Mr Ndiaye, Somone" },
+    { "type": "realisation", "text": "Rénovation complète salle de bain, résidence Saly.", "author": "", "image": "photos/g1.jpg" }
+  ],
+
+  "card": {
+    "image": "photos/carte.jpg",
+    "qr": "photos/qr.png",
+    "digiylyfe_url": "https://babacar-plomberie.digiylyfe.com"
+  }
+}

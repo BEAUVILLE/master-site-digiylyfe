@@ -3,31 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
-<!-- ==========================================================
-     MASTER SITE DIGIYLYFE · V1  —  SHELL FIXE
-     Ce fichier ne change JAMAIS d'un pro à l'autre.
-     Tout le contenu vient de client.json. Pour dupliquer :
-     copier le dossier, remplacer client.json + le dossier /photos.
-     ========================================================== -->
-
-<title>DIGIYLYFE · Présence terrain</title>
-<meta name="description" content="Présence digitale directe — contact direct, paiement direct, 0 % de commission. Réalisé avec DIGIYLYFE." />
+<title>DEMO-BABACAR-001 · DIGIYLYFE</title>
+<meta name="description" content="Démonstrateur DIGIYLYFE · Babacar Plomberie." />
 <meta name="theme-color" content="#0D0F0E" />
-
-<!-- OG génériques DIGIYLYFE (aperçu de partage par défaut). -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="DIGIYLYFE · Présence terrain" />
-<meta property="og:description" content="Contact direct · Paiement direct · 0 % de commission." />
-<meta property="og:image" content="photos/icon-512.png" />
+<meta property="og:title" content="Babacar Plomberie · Démo DIGIYLYFE" />
+<meta property="og:description" content="Démonstrateur DIGIYLYFE · Contact direct · Paiement direct · 0 % de commission." />
+<meta property="og:image" content="photos/og-default.jpg" />
 
-<link rel="manifest" href="manifest.json" />
+<link rel="manifest" href="../manifest.json" />
 <link rel="apple-touch-icon" href="photos/icon-180.png" />
-<link rel="stylesheet" href="styles.css" />
-
+<link rel="stylesheet" href="../styles.css" />
 <script id="client-data" type="application/json"></script>
 </head>
-
 <body>
 <header class="topbar" data-reveal>
   <a class="brand" href="#top" aria-label="DIGIYLYFE">
@@ -36,7 +24,6 @@
   </a>
   <div class="lang" id="lang" role="group" aria-label="Choisir la langue"></div>
 </header>
-
 <main id="top">
   <section class="hero" id="identity" aria-label="Identité">
     <div class="hero__media" id="hero-media"></div>
@@ -47,56 +34,44 @@
       <p class="hero__tagline" id="hero-tagline"></p>
     </div>
   </section>
-
   <section class="quickcontact" id="quickcontact" aria-label="Contact immédiat"></section>
-
   <section class="block about" id="about" hidden>
     <h2 class="block__title" data-ui="about"></h2>
     <div class="about__text" id="about-text"></div>
   </section>
-
   <section class="block services" id="services" hidden>
     <h2 class="block__title" data-ui="services"></h2>
     <div class="services__grid" id="services-grid"></div>
   </section>
-
   <section class="block gallery" id="gallery" hidden>
     <h2 class="block__title" data-ui="gallery"></h2>
     <div class="gallery__grid" id="gallery-grid"></div>
   </section>
-
   <section class="block proofs" id="proofs" hidden>
     <h2 class="block__title" data-ui="proofs"></h2>
     <div class="proofs__grid" id="proofs-grid"></div>
   </section>
-
   <section class="block card" id="card" hidden>
     <h2 class="block__title" data-ui="card"></h2>
     <div class="card__inner" id="card-inner"></div>
   </section>
-
   <section class="block finalcontact" id="finalcontact" aria-label="Contact">
     <h2 class="block__title" data-ui="contact"></h2>
     <div class="finalcontact__inner" id="finalcontact-inner"></div>
   </section>
-
   <footer class="signature" id="signature">
     <span class="signature__mark" aria-hidden="true">🦅♾️</span>
     <p class="signature__line" data-ui="made_with"></p>
     <p class="signature__doctrine" data-ui="doctrine"></p>
   </footer>
 </main>
-
 <nav class="dock" id="dock" aria-label="Contact direct" hidden></nav>
-
 <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
   <button class="lightbox__close" id="lightbox-close" aria-label="Fermer">✕</button>
   <img class="lightbox__img" id="lightbox-img" alt="" />
 </div>
-
 <div class="fallback" id="fallback" hidden></div>
-
-<script src="app.js" defer></script>
-<script src="reader.js" defer></script>
+<script src="../app.js" defer></script>
+<script src="../reader.js" defer></script>
 </body>
 </html>

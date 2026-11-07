@@ -9,6 +9,6 @@ Réutilise le MASTER SITE DIGIYLYFE V1, ainsi que la carte SERVICE/ARTISAN, dans
 - Aucun partenaire, prix, photo de chantier, avis ou résultat inventé.
 - Aucune coordonnée personnelle publiée sans confirmation. Les boutons Appeler/WhatsApp et le QR restent bloqués.
 - Aucune relation bancaire ni commission DIGIY. Une commission d'apporteur d'affaires serait distincte et négociée avec les partenaires.
-- Multilingue : site MASTER V1 = 8 langues, carte = 10 interfaces avec fallback FR pour WO et ZH. À harmoniser avant publication.
+- Multilingue : dix langues FR EN ES PT IT DE NL AR WO ZH, textes et boutons proposés pour WO/ZH. Traduction wolof/chinois en **relecture humaine obligatoire** avant publication commerciale ; audio wolof non validé.
 
 Avant diffusion : valider nom professionnel, contact public, conformité de l'activité, accords partenaires, interventions annoncées, langues, lien final de carte et QR, puis raccordement territoire/annuaire/LA VOIX et tests mobiles.

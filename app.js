@@ -67,6 +67,21 @@
         doctrine:"تواصل مباشر · دفع مباشر · 0٪ عمولة",
         card_hint:"امسح للاحتفاظ ببطاقتي في هاتفك.",
         empty_t:"لا توجد بيانات",empty_d:"أضف client.json بجانب الموقع."}
+,
+    wo:{whatsapp:"WhatsApp",call:"Woote",directions:"Yoonu dem",share:"Séddoo",
+        save:"Denc ci sama telefon",about:"Kan laa?",services:"Liggéey yi",gallery:"Nataal yi",
+        proofs:"Ñi ma wóolu",card:"Sama kàrt DIGIYLYFE",contact:"Jokkool ak man",
+        hours:"Waxtu yi",zone:"Gox",made_with:"DIGIYLYFE moo tax mu am ci internet",
+        doctrine:"Jokkoo ci njub · Fay ci njub · 0 % komision DIGIYLYFE",
+        card_hint:"Scan ngir denc sama kàrt ci sa telefon.",
+        empty_t:"Amul ay xibaar",empty_d:"Yokk client.json ci dal bi."},
+    zh:{whatsapp:"WhatsApp",call:"拨打电话",directions:"路线",share:"分享",
+        save:"保存到手机",about:"关于我",services:"服务",gallery:"照片",
+        proofs:"客户信任",card:"我的 DIGIYLYFE 名片",contact:"联系我",
+        hours:"营业时间",zone:"服务区域",made_with:"由 DIGIYLYFE 提供数字展示",
+        doctrine:"直接联系 · 直接付款 · DIGIYLYFE 0% 佣金",
+        card_hint:"扫描二维码，将我的名片保存到手机。",
+        empty_t:"暂无资料",empty_d:"请将 client.json 放在网站同一目录。"},
   };
 
   /* Accent par métier — 1 squelette, N expressions. Défaut = or DIGIYLYFE. */
@@ -145,7 +160,7 @@
     if (LANGS.length < 2) return;
     LANGS.forEach((code) => {
       const b = el("button");
-      b.textContent = code;
+      b.textContent = code === "zh" ? "中文" : code;
       b.setAttribute("aria-current", code === LANG ? "true" : "false");
       b.addEventListener("click", () => {
         LANG = code;
@@ -161,7 +176,7 @@
 
   function setDir() {
     const rtl = RTL.has(LANG);
-    document.documentElement.lang = LANG;
+    document.documentElement.lang = LANG === "zh" ? "zh-CN" : LANG;
     document.documentElement.dir = rtl ? "rtl" : "ltr";
   }
 

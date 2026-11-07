@@ -30,9 +30,9 @@ Aucune base de données, aucune connexion, aucun cockpit, aucun moteur.
   chauffeur, location, consultant…). `meta.accent` force une couleur précise si besoin.
 - Un bloc vide (services `[]`, pas de galerie…) **disparaît** tout seul. Pas de trou.
 
-## Les 8 langues
+## Les 10 langues
 
-FR par défaut, + EN ES PT IT DE NL AR (RTL arabe géré). Le **chrome** (boutons, titres de
+FR par défaut, + EN ES PT IT DE NL AR WO ZH (RTL arabe géré). Le **chrome** (boutons, titres de
 section) est traduit dans `app.js` ; le **contenu du pro** suit `client.json`.
 Même moteur d'esprit que LOC / l'accueil — cohérent inter-modules.
 

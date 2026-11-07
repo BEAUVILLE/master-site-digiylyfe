@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<!-- ==========================================================
+     MASTER SITE DIGIYLYFE · V1  —  SHELL FIXE
+     Ce fichier ne change JAMAIS d'un pro à l'autre.
+     Tout le contenu vient de client.json. Pour dupliquer :
+     copier le dossier, remplacer client.json + le dossier /photos.
+     ========================================================== -->
+
+<title>Jean-Baptiste · Mise en relation commerciale · Test DIGIY</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Présence digitale directe — contact direct, paiement direct, 0 % de commission. Réalisé avec DIGIYLYFE." />
+<meta name="theme-color" content="#0D0F0E" />
+
+<!-- OG génériques DIGIYLYFE (aperçu de partage par défaut). -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="DIGIYLYFE · Présence terrain" />
+<meta property="og:description" content="Contact direct · Paiement direct · 0 % de commission." />
+<meta property="og:image" content="photos/icon-512.png" />
+
+<link rel="manifest" href="../manifest.json" />
+<link rel="apple-touch-icon" href="../photos/icon-180.png" />
+<link rel="stylesheet" href="../styles.css" />
+
+<script id="client-data" type="application/json"></script>
+<style>/* Ajustement propre à cette instance TEST. */.finalcontact{display:none}.hero__scrim{background:linear-gradient(180deg,rgba(11,26,22,.04) 5%,rgba(11,26,22,.54) 60%,#081612 100%)}@media(max-width:430px){.topbar{flex-wrap:wrap;gap:5px}.lang{width:100%;justify-content:center}.hero{min-height:65vh}}</style>
+</head>
+
+<body>
+<header class="topbar" data-reveal>
+  <a class="brand" href="https://digiylyfe.com/" aria-label="Retour à DIGIYLYFE">
+    <span class="brand__mark" aria-hidden="true">♾️</span>
+    <span class="brand__name">DIGIYLYFE</span>
+  </a>
+  <a href="./carte.html" style="font-size:.78rem;font-weight:800;color:#1A5C38;padding:6px">Ma carte</a>
+  <div class="lang" id="lang" role="group" aria-label="Choisir la langue"></div>
+</header>
+
+<main id="top">
+  <section class="hero" id="identity" aria-label="Identité">
+    <div class="hero__media" id="hero-media"></div>
+    <div class="hero__scrim"></div>
+    <div class="hero__inner">
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 class="hero__name" id="hero-name"></h1>
+      <p class="hero__tagline" id="hero-tagline"></p>
+    </div>
+  </section>
+
+  <section class="quickcontact" id="quickcontact" aria-label="Contact immédiat"></section>
+
+  <section class="block about" id="about" hidden>
+    <h2 class="block__title" data-ui="about"></h2>
+    <div class="about__text" id="about-text"></div>
+  </section>
+
+  <section class="block services" id="services" hidden>
+    <h2 class="block__title" data-ui="services"></h2>
+    <div class="services__grid" id="services-grid"></div>
+  </section>
+
+  <section class="block gallery" id="gallery" hidden>
+    <h2 class="block__title" data-ui="gallery"></h2>
+    <div class="gallery__grid" id="gallery-grid"></div>
+  </section>
+
+  <section class="block proofs" id="proofs" hidden>
+    <h2 class="block__title" data-ui="proofs"></h2>
+    <div class="proofs__grid" id="proofs-grid"></div>
+  </section>
+
+  <section class="block card" id="card" hidden>
+    <h2 class="block__title" data-ui="card"></h2>
+    <div class="card__inner" id="card-inner"></div>
+  </section>
+
+  <section class="block finalcontact" id="finalcontact" aria-label="Contact">
+    <h2 class="block__title" data-ui="contact"></h2>
+    <div class="finalcontact__inner" id="finalcontact-inner"></div>
+  </section>
+
+  <footer class="signature" id="signature">
+    <span class="signature__mark" aria-hidden="true">🦅♾️</span>
+    <p class="signature__line" data-ui="made_with"></p>
+    <p class="signature__doctrine" data-ui="doctrine"></p>
+    <p style="margin-top:10px;font-size:.9rem"><a style="color:#e1bd67" href="./carte.html">Voir ma carte DIGIY</a> · <a style="color:#e1bd67" href="https://digiylyfe.com/">Retour vitrine</a></p>
+  </footer>
+</main>
+
+<nav class="dock" id="dock" aria-label="Contact direct" hidden></nav>
+
+<div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+  <button class="lightbox__close" id="lightbox-close" aria-label="Fermer">✕</button>
+  <img class="lightbox__img" id="lightbox-img" alt="" />
+</div>
+
+<div class="fallback" id="fallback" hidden></div>
+
+<script src="../app.js" defer></script>
+<script src="../reader.js" defer></script>
+</body>
+</html>

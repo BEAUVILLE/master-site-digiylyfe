@@ -244,6 +244,16 @@
           job: "وسيط أعمال",
           zone: "سالي · الساحل الصغير",
           services: ["البناء","الهندسة المدنية","التكييف والطاقة الشمسية","الموردون والخدمات"]
+        },
+        wo: {
+          job: "Ku di jokkal jëndkat ak liggéeykat yi",
+          zone: "Saly · Petite Côte",
+          services: ["Tabax kër","Jàngat ak génie civil","Climatisation ak énergie solaire","Ñuy jaay ak liggéey yu bari"]
+        },
+        zh: {
+          job: "独立商业合作对接",
+          zone: "萨利 · 小海岸",
+          services: ["房屋建设","工程研究与土木工程","空调与太阳能","供应商与服务"]
         }
       }
     };
@@ -270,7 +280,7 @@
       de:{backHome:"← Zurück zu DIGIYLYFE.COM",member:"DIGIYLYFE PILOT",servicesTitle:"MEINE LEISTUNGEN",contactTitle:"DIREKTER KONTAKT",call:"Anrufen",whatsappBtn:"WhatsApp",zoneBtn:"Mein Gebiet",ficheBtn:"Profil ansehen",siteBtn:"Website ansehen",qrWaiting:"KUNDEN-QR NACH FREIGABE DER ENDGÜLTIGEN URL",directContact:"Direkter Kontakt",directPayment:"Direkte Zahlung",zeroCommission:"0 % DIGIYLYFE-Provision",testMode:"MASTER / TEST · NICHT INDEXIERT · QR BIS ZUR FINALEN URL GESPERRT",publicMode:"ÖFFENTLICHE KARTE · MENSCH + MASCHINE AKTIV"},
       nl:{backHome:"← Terug naar DIGIYLYFE.COM",member:"DIGIYLYFE PILOT",servicesTitle:"MIJN DIENSTEN",contactTitle:"DIRECT CONTACT",call:"Bellen",whatsappBtn:"WhatsApp",zoneBtn:"Mijn zone",ficheBtn:"Bekijk mijn fiche",siteBtn:"Bekijk mijn website",qrWaiting:"KLANT-QR NA VALIDATIE VAN DE DEFINITIEVE URL",directContact:"Direct contact",directPayment:"Directe betaling",zeroCommission:"0% DIGIYLYFE-commissie",testMode:"MASTER / TEST · NIET GEÏNDEXEERD · QR GEBLOKKEERD TOT DEFINITIEVE URL",publicMode:"PUBLIEKE KAART · MENS + MACHINE ACTIEF"},
       wo:{backHome:"← Dellu ci DIGIYLYFE.COM",member:"PILOTE DIGIYLYFE",servicesTitle:"SAMA LIGGÉEY YI",contactTitle:"JOKKOO CI NJUB",call:"Woote",whatsappBtn:"WhatsApp",zoneBtn:"Sama gox",ficheBtn:"Seet sama fiche",siteBtn:"Seet sama dal",qrWaiting:"QR BI DINA FEEÑ BU URL BI JEEXEE",directContact:"Jokkoo ci njub",directPayment:"Fay ci njub",zeroCommission:"0% komision DIGIYLYFE",testMode:"MASTER / TEST · KÀRT BI DU FEEÑ BA URL BI WÓOR",publicMode:"KÀRTU ÑÉPP · NIT AK MASIN ÑOO AND"},
-      zh:{backHome:"← 返回 DIGIYLYFE.COM",member:"DIGIYLYFE 会员",servicesTitle:"我的服务",contactTitle:"直接联系",call:"拨打电话",whatsappBtn:"WhatsApp",zoneBtn:"我的地区",ficheBtn:"查看详情",siteBtn:"访问网站",qrWaiting:"最终链接确认后显示二维码",directContact:"直接联系",directPayment:"直接付款",zeroCommission:"DIGIYLYFE 0% 佣金",testMode:"模板测试 · 暂不收录 · 等待最终链接确认",publicMode:"公开名片 · 信息已发布"},
+      zh:{backHome:"← 返回 DIGIYLYFE.COM",member:"DIGIYLYFE 试点",servicesTitle:"我的服务",contactTitle:"直接联系",call:"拨打电话",whatsappBtn:"WhatsApp",zoneBtn:"我的地区",ficheBtn:"查看详情",siteBtn:"访问网站",qrWaiting:"最终链接确认后显示二维码",directContact:"直接联系",directPayment:"直接付款",zeroCommission:"DIGIYLYFE 0% 佣金",testMode:"模板测试 · 暂不收录 · 等待最终链接确认",publicMode:"公开名片 · 信息已发布"},
       ar:{backHome:"← العودة إلى DIGIYLYFE.COM",member:"عضو DIGIYLYFE",servicesTitle:"خدماتي",contactTitle:"تواصل مباشر",call:"اتصال",whatsappBtn:"واتساب",zoneBtn:"منطقتي",ficheBtn:"عرض بطاقتي المفصلة",siteBtn:"عرض موقعي",qrWaiting:"رمز QR للعميل بعد اعتماد الرابط النهائي",directContact:"تواصل مباشر",directPayment:"دفع مباشر",zeroCommission:"0٪ عمولة DIGIYLYFE",testMode:"نموذج / اختبار · غير مفهرس · رمز QR مقفل حتى اعتماد الرابط النهائي",publicMode:"بطاقة عامة · الطبقة البشرية + طبقة الآلة مفعّلتان"}
     };
 
@@ -300,7 +310,7 @@
       currentLang = LANGS.includes(lang) ? lang : "fr";
       try{ localStorage.setItem(LANG_KEY,currentLang); }catch(_){}
 
-      document.documentElement.lang=currentLang;
+      document.documentElement.lang=currentLang==="zh"?"zh-CN":currentLang;
       document.documentElement.dir=currentLang==="ar"?"rtl":"ltr";
 
       const ui=UI[currentLang]||UI.fr;

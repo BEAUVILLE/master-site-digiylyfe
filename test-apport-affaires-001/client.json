@@ -14,7 +14,9 @@
       "it",
       "de",
       "nl",
-      "ar"
+      "ar",
+      "wo",
+      "zh"
     ],
     "url": "https://master-site-digiylyfe.digiylyfe.com/test-apport-affaires-001/"
   },
@@ -29,7 +31,9 @@
       "it": "Segnalatore commerciale",
       "de": "Geschäftskontaktvermittlung",
       "nl": "Zakelijke bemiddeling",
-      "ar": "وسيط أعمال"
+      "ar": "وسيط أعمال",
+      "wo": "Ku di jokkal jëndkat ak liggéeykat yi",
+      "zh": "独立商业合作对接"
     },
     "zone": "Saly · Petite Côte · Sénégal",
     "tagline": {
@@ -40,7 +44,9 @@
       "it": "Hai un progetto. Potrei conoscere la persona giusta.",
       "de": "Sie haben ein Projekt. Vielleicht kenne ich die richtige Person.",
       "nl": "U heeft een project. Misschien ken ik de juiste persoon.",
-      "ar": "لديك مشروع؟ قد أعرف الشخص المناسب."
+      "ar": "لديك مشروع؟ قد أعرف الشخص المناسب.",
+      "wo": "Am nga soxla? Xéyna xam naa ku la man a dimbali.",
+      "zh": "您有需求，我也许认识合适的人。"
     },
     "hero_image": "photos/hero-connexion.svg",
     "hero_image_fallback": "photos/hero-connexion.svg",
@@ -61,7 +67,9 @@
       "it": "Favorisco il contatto tra clienti e professionisti. Preventivi, contratti, pagamenti ed esecuzione spettano al fornitore. Eventuali provvigioni sono concordate separatamente. Pagina di prova.",
       "de": "Ich suche Kontakte zwischen Kunden und Fachleuten. Angebote, Verträge, Zahlungen und Durchführung bleiben Sache des Anbieters. Vermittlungsvergütungen werden separat vereinbart. Testseite.",
       "nl": "Ik zoek contacten tussen klanten en vakmensen. Offertes, contracten, betalingen en uitvoering zijn de verantwoordelijkheid van de aanbieder. Vergoedingen worden apart afgesproken. Testpagina.",
-      "ar": "أبحث عن فرص للتواصل بين العملاء والمهنيين. يتحمل مقدم الخدمة مسؤولية عروض الأسعار والعقود والمدفوعات والتنفيذ. تُتفق رسوم الوساطة بشكل منفصل. هذه صفحة تجريبية."
+      "ar": "أبحث عن فرص للتواصل بين العملاء والمهنيين. يتحمل مقدم الخدمة مسؤولية عروض الأسعار والعقود والمدفوعات والتنفيذ. تُتفق رسوم الوساطة بشكل منفصل. هذه صفحة تجريبية.",
+      "wo": "Am nga projet walla dangay wut ku la man a dimbali? Man naa seet ay liggéeykat walla ñuy jaay ndawtal yi, te jokkal leen ak yaw su nu xame ne mën nañu def liggéey bi.\nÑi di def liggéey bi ñoo wara joxe devis, def kontrà, jot pey bi te yor seen warugar.\nSu amee peyu jokkal, dañu koy déggoo ak liggéeykat bi. DIGIYLYFE du jël komision ci jaay bi.\nBii xët bu ñuy teste la. Ñi nu mën a liggéeyandoo ak ñoom ak nimu ñu mënee jokkoo dañu leen di seet ba noppi.",
+      "zh": "您有建筑项目，或者正在寻找供应商及服务人员？我可以根据您的需求，寻找并核实合适的专业人员，再协助双方建立联系。\n拟覆盖的领域包括房屋建筑、工程技术研究、空调、太阳能设备及其他产品或服务；具体服务取决于实际达成的合作协议。\n专业服务商自行负责报价、签约、收款和履约。可能产生的业务介绍报酬由合作双方另行、透明地约定；DIGIYLYFE 平台不抽取销售佣金。\n本页面仍为试行版本，合作伙伴及公开联系方式尚待确认。"
     }
   },
   "services": [
@@ -74,7 +82,9 @@
         "it": "Costruzione",
         "de": "Bauprojekte",
         "nl": "Bouwprojecten",
-        "ar": "البناء"
+        "ar": "البناء",
+        "wo": "Tabax kër",
+        "zh": "房屋建设"
       },
       "desc": {
         "fr": "Recherche de bâtisseurs pour projets privés, sous réserve de partenaires vérifiés.",
@@ -84,7 +94,9 @@
         "it": "Ricerca di costruttori.",
         "de": "Kontakt zu Bauunternehmen.",
         "nl": "Contact met bouwers.",
-        "ar": "البحث عن مقاولين."
+        "ar": "البحث عن مقاولين.",
+        "wo": "Wut ay tabaxkat yu mën a def proyek yu nit ñi, su nu wóoroo ci seen liggéey.",
+        "zh": "根据项目需求寻找并核实合适的建筑承包商。"
       }
     },
     {
@@ -96,7 +108,9 @@
         "it": "Ingegneria",
         "de": "Ingenieurwesen",
         "nl": "Ingenieursdiensten",
-        "ar": "الهندسة المدنية"
+        "ar": "الهندسة المدنية",
+        "wo": "Jàngat ak génie civil",
+        "zh": "工程研究与土木工程"
       },
       "desc": {
         "fr": "Orientation possible vers des professionnels qualifiés après validation.",
@@ -106,7 +120,9 @@
         "it": "Possibili contatti con professionisti.",
         "de": "Kontakte zu Fachleuten.",
         "nl": "Contacten met specialisten.",
-        "ar": "ربط محتمل بالمتخصصين."
+        "ar": "ربط محتمل بالمتخصصين.",
+        "wo": "Man naa la jokkal ak ay xam-xamkat yu am kàttan, gannaaw seetlu.",
+        "zh": "核实资质后协助联系相关技术专业人员。"
       }
     },
     {
@@ -118,7 +134,9 @@
         "it": "Clima e solare",
         "de": "Klima und Solar",
         "nl": "Airco en zonne-energie",
-        "ar": "التكييف والطاقة الشمسية"
+        "ar": "التكييف والطاقة الشمسية",
+        "wo": "Climatisation ak énergie solaire",
+        "zh": "空调与太阳能"
       },
       "desc": {
         "fr": "Recherche de prestataires de fourniture, pose ou entretien.",
@@ -128,7 +146,9 @@
         "it": "Fornitori e installatori.",
         "de": "Anbieter für Lieferung und Montage.",
         "nl": "Leveranciers en installateurs.",
-        "ar": "موردون وفنيون محتملون."
+        "ar": "موردون وفنيون محتملون.",
+        "wo": "Wut ñu mën a jaay, samp walla defaraat jumtukaay yi, gannaaw seetlu.",
+        "zh": "按需寻找设备供应、安装或维护服务商。"
       }
     },
     {
@@ -140,7 +160,9 @@
         "it": "Fornitori e servizi",
         "de": "Lieferanten und Dienste",
         "nl": "Leveranciers en diensten",
-        "ar": "الموردون والخدمات"
+        "ar": "الموردون والخدمات",
+        "wo": "Ñuy jaay ak liggéey yu bari",
+        "zh": "供应商与服务"
       },
       "desc": {
         "fr": "Autres besoins étudiés selon les accords disponibles.",
@@ -150,7 +172,9 @@
         "it": "Altre richieste valutate.",
         "de": "Weitere Anfragen nach Absprache.",
         "nl": "Andere vragen in overleg.",
-        "ar": "طلبات أخرى حسب الاتفاقات."
+        "ar": "طلبات أخرى حسب الاتفاقات.",
+        "wo": "Seet yeneen soxla yi ni ñu ko déggoo ak ñi nu bokkal liggéey.",
+        "zh": "根据实际合作安排评估其他产品或服务需求。"
       }
     }
   ],

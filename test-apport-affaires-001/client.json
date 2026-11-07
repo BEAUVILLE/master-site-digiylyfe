@@ -1,0 +1,164 @@
+{
+  "_lisezmoi": "TEST NON PUBLIÉ · PAS D'IDENTITÉ OU DE PARTENARIAT CONTRACTUEL CONFIRMÉ · CONTACT À VALIDER",
+  "meta": {
+    "id": "TEST-APPORT-001",
+    "slug": "test-apport-affaires-001",
+    "sector": "consultant",
+    "accent": "#1A5C38",
+    "lang_default": "fr",
+    "langs": [
+      "fr",
+      "en",
+      "es",
+      "pt",
+      "it",
+      "de",
+      "nl",
+      "ar"
+    ],
+    "url": "https://master-site-digiylyfe.digiylyfe.com/test-apport-affaires-001/"
+  },
+  "identity": {
+    "name": "Jean-Baptiste",
+    "brand": "Jean-Baptiste · Mise en relation",
+    "activity": {
+      "fr": "Apporteur d'affaires indépendant",
+      "en": "Independent business introducer",
+      "es": "Intermediario comercial",
+      "pt": "Intermediação comercial",
+      "it": "Segnalatore commerciale",
+      "de": "Geschäftskontaktvermittlung",
+      "nl": "Zakelijke bemiddeling",
+      "ar": "وسيط أعمال"
+    },
+    "zone": "Saly · Petite Côte · Sénégal",
+    "tagline": {
+      "fr": "Vous avez un besoin. Je connais peut-être la bonne personne.",
+      "en": "You have a need. I may know the right person.",
+      "es": "Tiene un proyecto. Quizá conozca a la persona adecuada.",
+      "pt": "Tem um projeto. Talvez conheça a pessoa certa.",
+      "it": "Hai un progetto. Potrei conoscere la persona giusta.",
+      "de": "Sie haben ein Projekt. Vielleicht kenne ich die richtige Person.",
+      "nl": "U heeft een project. Misschien ken ik de juiste persoon.",
+      "ar": "لديك مشروع؟ قد أعرف الشخص المناسب."
+    },
+    "hero_image": "photos/hero-connexion.svg",
+    "hero_image_fallback": "photos/hero-connexion.svg",
+    "hero_video": null
+  },
+  "contact": {
+    "whatsapp": "",
+    "phone": "",
+    "maps": "",
+    "hours": ""
+  },
+  "about": {
+    "text": {
+      "fr": "Vous avez un projet ou recherchez un fournisseur ? J'étudie votre demande et peux vous présenter un professionnel adapté, après vérification de son activité et de sa disponibilité.\nDomaines envisagés : construction, études techniques, climatisation, énergie solaire et autres services ou produits selon les accords conclus.\nLe partenaire établit directement ses devis, contrats et factures, encaisse son client et assume l'exécution. La rémunération éventuelle d'apport d'affaires fait l'objet d'un accord commercial distinct, sans commission prélevée par DIGIYLYFE.\nPrototype en préparation : aucun partenaire ni contact direct encore publié.",
+      "en": "I explore introductions between clients, suppliers and service providers. The professional is responsible for quotes, contracts, payments and delivery. Any business introduction fee is agreed separately. This is a test page without confirmed partners.",
+      "es": "Exploro contactos entre clientes y profesionales. El proveedor se encarga de los presupuestos, contratos, pagos y trabajos. La comisión comercial se acuerda por separado. Página de prueba sin socios confirmados.",
+      "pt": "Procuro contactos entre clientes e profissionais. O prestador é responsável pelos orçamentos, contratos, pagamentos e trabalhos. A comissão é acordada separadamente. Página de teste sem parceiros confirmados.",
+      "it": "Favorisco il contatto tra clienti e professionisti. Preventivi, contratti, pagamenti ed esecuzione spettano al fornitore. Eventuali provvigioni sono concordate separatamente. Pagina di prova.",
+      "de": "Ich suche Kontakte zwischen Kunden und Fachleuten. Angebote, Verträge, Zahlungen und Durchführung bleiben Sache des Anbieters. Vermittlungsvergütungen werden separat vereinbart. Testseite.",
+      "nl": "Ik zoek contacten tussen klanten en vakmensen. Offertes, contracten, betalingen en uitvoering zijn de verantwoordelijkheid van de aanbieder. Vergoedingen worden apart afgesproken. Testpagina.",
+      "ar": "أبحث عن فرص للتواصل بين العملاء والمهنيين. يتحمل مقدم الخدمة مسؤولية عروض الأسعار والعقود والمدفوعات والتنفيذ. تُتفق رسوم الوساطة بشكل منفصل. هذه صفحة تجريبية."
+    }
+  },
+  "services": [
+    {
+      "title": {
+        "fr": "Construction",
+        "en": "Construction",
+        "es": "Construcción",
+        "pt": "Construção",
+        "it": "Costruzione",
+        "de": "Bauprojekte",
+        "nl": "Bouwprojecten",
+        "ar": "البناء"
+      },
+      "desc": {
+        "fr": "Recherche de bâtisseurs pour projets privés, sous réserve de partenaires vérifiés.",
+        "en": "Potential introductions to builders.",
+        "es": "Búsqueda de constructores.",
+        "pt": "Busca de construtores.",
+        "it": "Ricerca di costruttori.",
+        "de": "Kontakt zu Bauunternehmen.",
+        "nl": "Contact met bouwers.",
+        "ar": "البحث عن مقاولين."
+      }
+    },
+    {
+      "title": {
+        "fr": "Études et génie civil",
+        "en": "Engineering",
+        "es": "Ingeniería",
+        "pt": "Engenharia",
+        "it": "Ingegneria",
+        "de": "Ingenieurwesen",
+        "nl": "Ingenieursdiensten",
+        "ar": "الهندسة المدنية"
+      },
+      "desc": {
+        "fr": "Orientation possible vers des professionnels qualifiés après validation.",
+        "en": "Possible introductions to qualified professionals.",
+        "es": "Posibles contactos con profesionales.",
+        "pt": "Possíveis contactos com profissionais.",
+        "it": "Possibili contatti con professionisti.",
+        "de": "Kontakte zu Fachleuten.",
+        "nl": "Contacten met specialisten.",
+        "ar": "ربط محتمل بالمتخصصين."
+      }
+    },
+    {
+      "title": {
+        "fr": "Climatisation et solaire",
+        "en": "AC and solar",
+        "es": "Climatización y solar",
+        "pt": "Climatização e solar",
+        "it": "Clima e solare",
+        "de": "Klima und Solar",
+        "nl": "Airco en zonne-energie",
+        "ar": "التكييف والطاقة الشمسية"
+      },
+      "desc": {
+        "fr": "Recherche de prestataires de fourniture, pose ou entretien.",
+        "en": "Potential supply and installation providers.",
+        "es": "Proveedores de suministro e instalación.",
+        "pt": "Fornecedores e instaladores.",
+        "it": "Fornitori e installatori.",
+        "de": "Anbieter für Lieferung und Montage.",
+        "nl": "Leveranciers en installateurs.",
+        "ar": "موردون وفنيون محتملون."
+      }
+    },
+    {
+      "title": {
+        "fr": "Fournisseurs et services",
+        "en": "Suppliers and services",
+        "es": "Proveedores y servicios",
+        "pt": "Fornecedores e serviços",
+        "it": "Fornitori e servizi",
+        "de": "Lieferanten und Dienste",
+        "nl": "Leveranciers en diensten",
+        "ar": "الموردون والخدمات"
+      },
+      "desc": {
+        "fr": "Autres besoins étudiés selon les accords disponibles.",
+        "en": "Other requests considered case by case.",
+        "es": "Otras solicitudes según disponibilidad.",
+        "pt": "Outras solicitações caso a caso.",
+        "it": "Altre richieste valutate.",
+        "de": "Weitere Anfragen nach Absprache.",
+        "nl": "Andere vragen in overleg.",
+        "ar": "طلبات أخرى حسب الاتفاقات."
+      }
+    }
+  ],
+  "gallery": [],
+  "proofs": [],
+  "card": {
+    "image": "",
+    "qr": "",
+    "digiylyfe_url": ""
+  }
+}

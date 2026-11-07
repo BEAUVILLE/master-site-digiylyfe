@@ -24,8 +24,8 @@
       "nl": "Lekken, installaties, herstellingen — ik kom snel en laat alles netjes achter.",
       "ar": "تسرّبات، تركيبات، إصلاحات — أتدخل بسرعة وأترك المكان نظيفًا."
     },
-    "hero_image": "photos/hero.webp",
-    "hero_image_fallback": "photos/hero.jpg",
+    "hero_image": "photos/hero-plombier.webp",
+    "hero_image_fallback": "photos/hero-plombier.webp",
     "hero_video": null
   },
   "contact": {

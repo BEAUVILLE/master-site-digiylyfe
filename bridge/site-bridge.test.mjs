@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {buildSite} from './site-bridge.mjs';
+const d={identifiant:'fictif-001',identite:{nom_affiche:'Atelier fictif',metier:'Artisan',ville:'Ville test',pays:'SN'},presence:{telephone:'+221 000000000',whatsapp:'+221 000000000'},validation:{dossier:'valide'},site:{demande:true,statut:'en_cours'},contenu_i18n:{fr:{_a_valider:false,metier_label:'Artisan',accroche:'Test',description:'Démonstration',elements_metier:[{id:'a',libelle:'Service test'}]},en:{_a_valider:true,description:'NOT APPROVED'}}};
+const options={slug:'atelier-fictif',media:{hero_image:'https://example.org/photo.webp',drive_folder:'https://drive.google.com/drive/folders/fictif',gallery:[{src:'https://example.org/gallery.webp',alt:'Test'}]},maps:'https://maps.google.com/?q=test'};
+const out=buildSite(d,options);
+assert.equal(out.identity.name,'Atelier fictif');assert.equal(out.services[0].title.fr,'Service test');assert.equal(out.about.text.en,undefined);assert.equal(out.gallery[0].src,'https://example.org/gallery.webp');assert.equal(out._bridge.state,'draft');assert.equal(out._bridge.human_review_required,true);assert.equal(out.meta.langs.length,10);
+assert.throws(()=>buildSite({...d,validation:{dossier:'brouillon'}},options));
+assert.throws(()=>buildSite({...d,site:{demande:false}},options));
+assert.throws(()=>buildSite(d,{...options,media:{hero_image:'javascript:alert(1)'}}));
+assert.throws(()=>buildSite(d,{...options,slug:'../test'}));
+console.log('MASTER SITE BRIDGE V1: fictitious adapter tests PASS');
